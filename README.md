@@ -35,9 +35,9 @@
     <span>Changes behaviour when SectorJS returns a single element array</span><br><br>
     <div align='left'>
     	<pre><code class="language-js">
-        sctr('body'); // Returns HTMLBodyElement<br>
-    	window['SECTORJS_DEARRAY_SINGLE_ELEMENT'] = false; // Sector will no longer de-array single element arrays<br>
-        sctr('body'); // Now returns Array ( [HTMLBodyElement] )
+sctr('body'); // Returns HTMLBodyElement<br>
+window['SECTORJS_DEARRAY_SINGLE_ELEMENT'] = false; // Sector will no longer de-array single element arrays<br>
+sctr('body'); // Now returns Array ( [HTMLBodyElement] )
     	</code></pre>
     </div><br><br>
     <hr>
@@ -45,9 +45,9 @@
     <span>Maximum number of parents <code>sctr#parentIterate(...)</code> will iterate through before forcefully stopping</span><br><br>
     <div align='left'>
     	<pre><code class="language-js">
-		sctr.parentIterate(myElem, 10); // Finds 10th parent<br>
-    	window['SECTORJS_MAX_FIND_PARENT_ITERATIONS'] = 5;<br>
-		sctr.parentIterate(myElem, 10); // Finds 5th parent, as a maximum cap is set with Sector
+sctr.parentIterate(myElem, 10); // Finds 10th parent<br>
+window['SECTORJS_MAX_FIND_PARENT_ITERATIONS'] = 5;<br>
+sctr.parentIterate(myElem, 10); // Finds 5th parent, as a maximum cap is set with Sector
     	</code></pre>
     </div><br><br>
     <hr>
